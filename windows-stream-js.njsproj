@@ -1,0 +1,105 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>windows-stream-js</Name>
+    <RootNamespace>windows-stream-js</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <ScriptArguments>
+    </ScriptArguments>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0443dad5-4477-4efb-a593-1635ac93f994</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="binding.gyp">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="bin\Microsoft.NodejsTools.WebRole.dll" />
+    <Content Include="build\config.gypi" />
+    <Content Include="build\Release\obj\window-stream\window-stream-c\pch.obj" />
+    <Content Include="build\Release\obj\window-stream\window-stream.node.recipe" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\CL.command.1.tlog" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\CL.read.1.tlog" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\CL.write.1.tlog" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\link.command.1.tlog" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\link.read.1.tlog" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\link.write.1.tlog" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\window-stream.lastbuildstate" />
+    <Content Include="build\Release\obj\window-stream\window-stream.tlog\window-stream.write.1u.tlog" />
+    <Content Include="build\Release\obj\window-stream\win_delay_load_hook.obj" />
+    <Content Include="build\Release\window-stream.exp" />
+    <Content Include="build\Release\window-stream.iobj" />
+    <Content Include="build\Release\window-stream.ipdb" />
+    <Content Include="build\Release\window-stream.lib" />
+    <Content Include="build\Release\window-stream.node" />
+    <Content Include="build\Release\window-stream.pdb" />
+    <Content Include="build\window-stream.vcxproj" />
+    <Content Include="build\window-stream.vcxproj.filters" />
+    <Content Include="main.js" />
+    <Content Include="obj\Debug\windows-stream-js.njsproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\windows-stream-js.njsproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\windows-stream-js.njsprojAssemblyReference.cache" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="window-stream-c\App.xaml" />
+    <Content Include="window-stream-c\App.xaml.cpp" />
+    <Content Include="window-stream-c\App.xaml.h" />
+    <Content Include="window-stream-c\Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="window-stream-c\Assets\SplashScreen.scale-200.png" />
+    <Content Include="window-stream-c\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="window-stream-c\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="window-stream-c\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="window-stream-c\Assets\StoreLogo.png" />
+    <Content Include="window-stream-c\Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="window-stream-c\Generated Files\App.g.h" />
+    <Content Include="window-stream-c\Generated Files\MainPage.g.h" />
+    <Content Include="window-stream-c\Generated Files\XamlBindingInfo.g.h" />
+    <Content Include="window-stream-c\Generated Files\XamlLibMetadataProvider.g.cpp" />
+    <Content Include="window-stream-c\Generated Files\XamlTypeInfo.g.h" />
+    <Content Include="window-stream-c\Generated Files\XamlTypeInfo.Impl.g.cpp" />
+    <Content Include="window-stream-c\MainPage.xaml" />
+    <Content Include="window-stream-c\MainPage.xaml.cpp" />
+    <Content Include="window-stream-c\MainPage.xaml.h" />
+    <Content Include="window-stream-c\Package.appxmanifest" />
+    <Content Include="window-stream-c\pch.cpp" />
+    <Content Include="window-stream-c\pch.h" />
+    <Content Include="window-stream-c\window-stream-c.vcxproj" />
+    <Content Include="window-stream-c\window-stream-c.vcxproj.filters" />
+    <Content Include="window-stream-c\window-stream-c.vcxproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="build\" />
+    <Folder Include="build\Release\" />
+    <Folder Include="build\Release\obj\" />
+    <Folder Include="build\Release\obj\window-stream\" />
+    <Folder Include="build\Release\obj\window-stream\window-stream-c\" />
+    <Folder Include="build\Release\obj\window-stream\window-stream.tlog\" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="window-stream-c\" />
+    <Folder Include="window-stream-c\Assets\" />
+    <Folder Include="window-stream-c\Generated Files\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>

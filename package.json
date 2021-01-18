@@ -1,0 +1,19 @@
+{
+  "name": "windows-stream",
+  "version": "0.0.0",
+  "description": "windows-stream-js",
+  "main": "main.js",
+  "author": "",
+  "scripts": {
+    "start": "nodemon index.js",
+    "install": "node-gyp configure",
+    "build": "node-gyp build",
+    "rebuild": "node-gyp rebuild "
+  },
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.14.2",
+    "node-gyp": "^7.1.2",
+    "nodemon": "^2.0.7"
+  }
+}
